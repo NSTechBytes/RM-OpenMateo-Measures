@@ -3,7 +3,7 @@
 ;=============================================================
 [Measure_OpenMateo_Current_Weather_Parent]
 Measure=WebParser
-URL=https://api.open-meteo.com/v1/forecast?latitude=#Latitude#&longitude=#Longitude#&current=temperature_2m,relative_humidity_2m,apparent_temperature,is_day,precipitation,rain,showers,snowfall,weather_code,cloud_cover,pressure_msl,surface_pressure,wind_speed_10m,wind_direction_10m,wind_gusts_10m
+URL=https://api.open-meteo.com/v1/forecast?latitude=#Latitude#&longitude=#Longitude#&current=temperature_2m,relative_humidity_2m,apparent_temperature,is_day,precipitation,rain,showers,snowfall,weather_code,cloud_cover,pressure_msl,surface_pressure,wind_speed_10m,wind_direction_10m,wind_gusts_10m&temperature_unit=#Temperature_Unit#&precipitation_unit=#Precipitation_Unit#&wind_speed_unit=#Wind_Speed_Unit#
 Download=1
 RegExp=(?siU)"latitude":\s*(-?\d+(?:\.\d+)?).*?"longitude":\s*(-?\d+(?:\.\d+)?).*?"timezone":\s*"([^"]*)".*?"timezone_abbreviation":\s*"([^"]*)".*?"elevation":\s*(-?\d+(?:\.\d+)?).*?"current":\s*\{.*?"time":\s*"([^"]*)".*?"interval":\s*(-?\d+).*?"temperature_2m":\s*(-?\d+(?:\.\d+)?).*?"relative_humidity_2m":\s*(-?\d+).*?"apparent_temperature":\s*(-?\d+(?:\.\d+)?).*?"is_day":\s*(-?\d+).*?"precipitation":\s*(-?\d+(?:\.\d+)?).*?"rain":\s*(-?\d+(?:\.\d+)?).*?"showers":\s*(-?\d+(?:\.\d+)?).*?"snowfall":\s*(-?\d+(?:\.\d+)?).*?"weather_code":\s*(-?\d+).*?"cloud_cover":\s*(-?\d+).*?"pressure_msl":\s*(-?\d+(?:\.\d+)?).*?"surface_pressure":\s*(-?\d+(?:\.\d+)?).*?"wind_speed_10m":\s*(-?\d+(?:\.\d+)?).*?"wind_direction_10m":\s*(-?\d+).*?"wind_gusts_10m":\s*(-?\d+(?:\.\d+)?)
 Debug=2
